@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int convert(char input) {
+int convert(char num) {
+    int i;
+    i = atoi(input);
 
+    return i;
 }
