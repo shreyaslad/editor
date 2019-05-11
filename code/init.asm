@@ -6,25 +6,25 @@ section .rodata
     title db "Welcome to Ed1t", 0xa
     titleLen equ $ - title
 
-    subTitle db "Enter the number that corresponds with the action you want to perform", 0xa
+    subTitle db "Enter the number that corresponds with the action you want to perform", 0xa, 0xa
     subTitleLen equ $ - subTitle
 
-    option1 db "Read from a file", 0xa
+    option1 db "1. Read from a file", 0xa
     option1Len equ $ - option1
 
-    option2 db "Write to a file", 0xa
+    option2 db "2. Write to a file", 0xa
     option2Len equ $ - option2
 
-    option3 db "Create a file", 0xa
+    option3 db "3. Create a file", 0xa
     option3Len equ $ - option3
 
-    option4 db "Create and Write to a file", 0xa
+    option4 db "4. Create and Write to a file", 0xa
     option4Len equ $ - option4
 
-    option5 db "Create a directory", 0xa
+    option5 db "5. Create a directory", 0xa
     option5Len equ $ - option5
 
-    option6 db "Remove a directory", 0xa, 0xa
+    option6 db "6. Remove a directory", 0xa, 0xa
     option6Len equ $ - option6
 
     choicePrompt db "Enter your choice: ", 0
