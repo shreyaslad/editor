@@ -1,18 +1,11 @@
-; main.asm
-; Copyright 2019 Shreyas Lad (PenetratingShot)
-
-; Main file for calling subroutines from other files in ./code/
-; Will also be used to create buffers
-
 %include "init.asm"
 
 section .text
     global _start
 
 _start:
+  call _printTitles
 
-
-
-    mov rax, 60
-    mov rsi, 0
-    syscall
+  mov rax, 60       ; exit(
+  mov rdi, 0        ;   EXIT_SUCCESS
+  syscall           ; );
