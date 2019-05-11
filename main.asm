@@ -7,6 +7,8 @@ _start:
     call _printTitles
     call _printOptions
 
-     mov rax, 60
-     mov rdi, 0
-     syscall
+    call _getChoice
+
+    mov rax, 60
+    mov rdi, 0
+    syscall

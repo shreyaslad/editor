@@ -2,6 +2,9 @@
 ; Copyright 2019 Shreyas Lad (PenetratingShot)
 
 ; This file is for hosting the subroutines called at the start of the program, such as printing the title, subtitle, and prompting the user
+section .bss
+    choice resb 2
+
 section .rodata
     title db "Welcome to Ed1t", 0xa
     titleLen equ $ - title
@@ -27,7 +30,7 @@ section .rodata
     option6 db "6. Remove a directory", 0xa, 0xa
     option6Len equ $ - option6
 
-    choicePrompt db "Enter your choice: ", 0
+    choicePrompt db "Enter your choice: "
     choicePromptLen equ $ - choicePrompt
 
 _printTitles:
@@ -85,3 +88,15 @@ _printOptions:
     ret
 
 _getChoice:
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, choicePrompt
+    mov rdx, choicePromptLen
+    syscall
+
+    mov rax, 0
+    mov rdi, 0
+    mov rsi, choice
+    mov rdx, 2
+    syscall
+    ret
