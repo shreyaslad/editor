@@ -6,8 +6,6 @@
 %include "init.asm"
 %include "read.asm"
 
-extern convert
-
 section .text
     global _start
 
@@ -17,14 +15,11 @@ _start:
 
     call _getChoice
 
-    ;int eax = convert(choice)
-    mov rbx, [choice]
-    push rbx
-    call convert
-    mov r12b, [choice]
-    cmp r12b, i
+    mov rbx, [choice + 48]
+    cmp rdi, rbx
     je _readFile
 
+    pop rdi
     mov rax, 60
     mov rdi, 0
     syscall
