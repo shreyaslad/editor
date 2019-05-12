@@ -1,5 +1,5 @@
 ; main.asm
-; Copyright 2019 Shreyas Lad (PenetratingShot
+; Copyright 2019 Shreyas Lad (PenetratingShot)
 
 ;Holds the calls for subroutines. ./code/ directory contains files which contain mentioned subroutines
 
@@ -8,6 +8,7 @@
 
 section .text
     global _start
+
 
 _start:
     call _printTitles

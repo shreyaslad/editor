@@ -2,15 +2,24 @@
 ; Copyright 2019 Shreyas Lad (PenetratingShot)
 
 ; Hold the logic for reading from files
+section .bss
+    fileName: resb 2
 
 section .rodata
-    work db "You chose option 1"
-    workLen equ $ - work
+    promptFileName db "Filename: "
+    promptFileNameLen equ $ - promptFileName
 
 _readFile:
     mov rax, 1
     mov rdi, 1
-    mov rsi, work
-    mov rdx, workLen
+    mov rsi, promptFileName
+    mov rdx, promptFileNameLen
     syscall
+
+    mov rax, 0
+    mov rdi, 0
+    mov rsi, fileName
+    mov rdx, 2
+    syscall
+
     ret
