@@ -3,7 +3,7 @@
 
 ; Hold the logic for reading from files
 section .bss
-    fileName: resb 2
+    fileName: resb 20
 
 section .rodata
     promptFileName db "Filename: "
@@ -19,7 +19,7 @@ _readFile:
     mov rax, 0
     mov rdi, 0
     mov rsi, fileName
-    mov rdx, 2
+    mov rdx, 20
     syscall
 
     ret
