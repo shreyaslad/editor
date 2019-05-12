@@ -10,13 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d203c60-f4d8-4818-abdd-c738268d524a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/read.asm" beforeDir="false" afterPath="$PROJECT_DIR$/code/read.asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/main.o" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -42,8 +49,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/read.asm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="525">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/text.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -70,6 +86,7 @@
         <option value="$PROJECT_DIR$/code/stringtoint.c" />
         <option value="$PROJECT_DIR$/code/init.asm" />
         <option value="$PROJECT_DIR$/main.asm" />
+        <option value="$PROJECT_DIR$/code/text" />
         <option value="$PROJECT_DIR$/code/read.asm" />
       </list>
     </option>
@@ -143,12 +160,12 @@
       <workItem from="1557562407168" duration="107000" />
       <workItem from="1557562526729" duration="5184000" />
       <workItem from="1557619624901" duration="1470000" />
-      <workItem from="1557629218917" duration="1303000" />
+      <workItem from="1557629218917" duration="1985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8818000" />
+    <option name="totallyTimeSpent" value="9500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="993" extended-state="6" />
@@ -213,10 +230,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/read.asm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="525">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
     </entry>
